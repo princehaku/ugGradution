@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2011 3:56:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class lazy="false"  name="net.techest.ug.mvc.entity.Major" table="major" catalog="uggradution">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="cid" type="int">
+            <column name="cid" not-null="true">
+                <comment>&#209;&#167;&#212;&#186;&#186;&#197;&#194;&#235;</comment>
+            </column>
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="128" not-null="true" />
+        </property>
+        <property name="statu" type="int">
+            <column name="statu" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

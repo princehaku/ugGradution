@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2011 3:56:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class lazy="false" name="net.techest.ug.mvc.entity.User" table="user" catalog="uggradution">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="gid" type="int">
+            <column name="gid" not-null="true">
+                <comment>&#211;&#195;&#187;&#167;&#215;&#233;</comment>
+            </column>
+        </property>
+        <property name="sid" type="string">
+            <column name="sid" length="32" not-null="true" unique="true">
+                <comment>&#209;&#167;&#186;&#197;&#187;&#242;&#213;&#223;&#185;&#164;&#186;&#197;</comment>
+            </column>
+        </property>
+        <property name="mid" type="int">
+            <column name="mid" not-null="true" />
+        </property>
+        <property name="permissionset" type="string">
+            <column name="permissionset" length="65535" not-null="true">
+                <comment>&#184;&#189;&#188;&#211;&#181;&#196;&#200;&#168;&#207;&#222;&#201;&#232;&#214;&#195;</comment>
+            </column>
+        </property>
+        <property name="username" type="string">
+            <column name="username" length="16" not-null="true" />
+        </property>
+        <property name="password" type="string">
+            <column name="password" length="32" not-null="true" />
+        </property>
+        <property name="type" type="int">
+            <column name="type" not-null="true" />
+        </property>
+        <property name="statu" type="int">
+            <column name="statu" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 15, 2011 3:56:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+  <class catalog="uggradution" lazy="false" name="net.techest.ug.mvc.entity.Papersel" table="papersel">
+    <id name="id" type="java.lang.Integer">
+      <column name="id"/>
+      <generator class="identity"/>
+    </id>
+    <property name="pid" type="int">
+      <column name="pid" not-null="true"/>
+    </property>
+    <property name="yid" type="int">
+      <column name="yid" not-null="true"/>
+    </property>
+    <property name="owneruid" type="int">
+      <column name="owneruid" not-null="true">
+        <comment>ËùÓÐÕßµÄid</comment>
+      </column>
+    </property>
+    <property name="leftsolts" type="int">
+      <column name="leftsolts" not-null="true"/>
+    </property>
+    <property name="maxslots" type="int">
+      <column name="maxslots" not-null="true"/>
+    </property>
+    <property name="isdel" type="int">
+      <column name="isdel" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>

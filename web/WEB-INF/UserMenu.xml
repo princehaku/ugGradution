@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : UserMenu.xml
+    Created on : September 18, 2011, 7:55 PM
+    Author     : princehaku
+    Description:
+        学生控制条
+-->
+<menus baseurl="student.do">
+    <menu name="" value="选题系统">
+        <submenu name="newslist">公告列表</submenu>
+        <submenu name="myselect">我的选题</submenu>
+        <submenu name="select">查看题库</submenu>
+    </menu>
+</menus>

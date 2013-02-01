@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 26, 2011 9:19:38 PM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class lazy="false" name="net.techest.ug.mvc.entity.Paperyear" table="paperyear" catalog="uggradution">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="mid" type="int">
+            <column name="mid" not-null="true" />
+        </property>
+        <property name="maxsel" type="int">
+            <column name="maxsel" not-null="true" />
+        </property>
+        <property name="dtstart" type="date">
+            <column name="dtstart" length="0" not-null="true" />
+        </property>
+        <property name="dtend" type="date">
+            <column name="dtend" length="0" not-null="true" />
+        </property>
+        <property name="statu" type="int">
+            <column name="statu" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

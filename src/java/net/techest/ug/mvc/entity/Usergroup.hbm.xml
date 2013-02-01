@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Sep 20, 2011 9:19:18 AM by Hibernate Tools 3.2.1.GA -->
+<hibernate-mapping>
+    <class lazy="false" name="net.techest.ug.mvc.entity.Usergroup" table="usergroup" catalog="uggradution">
+        <id name="id" type="java.lang.Integer">
+            <column name="id" />
+            <generator class="identity" />
+        </id>
+        <property name="permissionset" type="string">
+            <column name="permissionset" length="65535" not-null="true" />
+        </property>
+        <property name="desp" type="string">
+            <column name="desp" length="300" not-null="true" />
+        </property>
+        <property name="home" type="string">
+            <column name="home" length="50" not-null="true">
+                <comment>&#181;&#199;&#194;&#188;&#186;&#243;&#204;&#248;&#215;&#170;&#181;&#196;&#210;&#179;&#195;&#230;</comment>
+            </column>
+        </property>
+        <property name="statu" type="int">
+            <column name="statu" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

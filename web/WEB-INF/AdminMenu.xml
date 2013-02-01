@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Document   : AdminMenu.xml
+    Created on : September 18, 2011, 7:55 PM
+    Author     : princehaku
+    Description:
+        管理员控制条
+-->
+<menus baseurl="admin.do">
+    <menu name="news" value="公告管理">
+        <submenu name="list">系统公告</submenu>
+        <submenu name="edit">添加公告</submenu>
+    </menu>
+    <menu name="select" value="选题管理">
+        <submenu name="detail">选题详情</submenu>
+        <submenu name="export">导出清单</submenu>
+        <submenu name="list">选题列表</submenu>
+        <submenu name="add">新建选题</submenu>
+    </menu>
+    <menu name="trunk" value="题库管理">
+        <submenu name="list">题库列表</submenu>
+    </menu>
+    <menu name="user" value="用户管理">
+        <submenu name="list">用户列表</submenu>
+        <submenu name="edit">添加用户</submenu>
+        <submenu name="import">批量导入</submenu>
+        <submenu name="group">组列表</submenu>
+    </menu>
+    <!--<menu name="colleague" value="学院管理">
+        <submenu name="list">学院列表</submenu>
+        <submenu name="group">添加专业</submenu>
+    </menu>-->
+</menus>
